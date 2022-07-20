@@ -39,9 +39,13 @@ alias ls='ls --color=auto'
 alias la='ls -al'
 alias vim='nvim'
 alias gadd="git add"
+alias yadd="yadm add"
 alias gim="git commit -m"
+alias yim="yadm commit -m"
 alias gini="git init"
+alias yini="yadm init"
 alias gpush="git push origin main"
+alias gpush="yadm push origin main"
 
 
 
