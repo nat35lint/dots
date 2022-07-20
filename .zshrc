@@ -38,6 +38,10 @@ ufetch-arch
 alias ls='ls --color=auto'
 alias la='ls -al'
 alias vim='nvim'
+alias gadd="git add"
+alias gim="git commit -m"
+alias gini="git init"
+alias gpush="git push origin main"
 
 
 
