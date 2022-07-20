@@ -1,0 +1,78 @@
+# for firefox
+
+super + w
+	"firefox"
+
+super + shift + w
+    "qutebrowser"
+
+#brightness
+
+XF86MonBrightness{Up,Down}
+	xbacklight {-inc 5,-dec 5}
+
+alt + shift + {k,j}
+	xbacklight {-inc 5,-dec 5}
+
+#volume
+
+alt + shift + {h,l}
+	amixer sset Master {5%+,5%-}
+
+alt + shift + x
+	amixer sset Master toggle
+	
+XF86Audio{RaiseVolume,LowerVolume}
+	amixer sset Master {5%+,5%-}
+
+XF86AudioMute
+	amixer sset Master toggle
+
+# pause and play songs
+
+alt + q
+	playerctl play-pause
+
+alt + w
+	playerctl --player=mpd play-pause
+
+alt + shift + {q,w}
+	playerctl --player=mpd {previous,next}
+
+alt + z
+	playerctl stop
+
+# flameshot
+
+super + Print
+	flameshot gui
+
+alt + p
+	flameshot gui
+	
+# blueman
+
+super + shift + b
+	blueman-manager
+
+# i3lock
+
+super + shift + c
+	i3lock -c "#32302f"
+
+# shutdown and reboot
+
+super + ctrl + shift + {x,r}
+	systemctl {poweroff,reboot}
+
+# typing test
+alt + t
+    kitty -e typioca
+
+# file managerr
+alt + f
+    pcmanfm
+
+# ncmpcpp
+alt + shift + n
+    kitty -e ncmpcpp
