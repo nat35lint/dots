@@ -19,3 +19,14 @@
     [SchemeInfoNorm]  = { col_gray3, "#1d2021",  "#000000"  }, // infobar middle  unselected {text,background,not used but cannot be empty}
 };
 
+	/*               fg         bg         border   */
+	[SchemeNorm] = { col_gray3, col_gray1, "#1d2021" },
+	[SchemeSel]  = { col_gray4, col_cyan,  "#aa6f41"  },
+	[SchemeStatus]  = { "#fbf1c7", "#1d2021",  "#000000"  }, // Statusbar right {text,background,not used but cannot be empty}
+	[SchemeTagsSel]  = { "#1d2021", "#aa6d41",  "#000000"  }, // Tagbar left selected {text,background,not used but cannot be empty}
+    [SchemeTagsNorm]  = { "#fbf1c7", "#1d2021",  "#000000"  }, // Tagbar left unselected {text,background,not used but cannot be empty}
+    [SchemeInfoSel]  = { "#1d2021", "#1d2021",  "#000000"  }, // infobar middle  selected {text,background,not used but cannot be empty}
+    [SchemeInfoNorm]  = { col_gray3, "#1d2021",  "#000000"  }, // infobar middle  unselected {text,background,not used but cannot be empty}
+};
+
+
