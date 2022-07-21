@@ -45,7 +45,7 @@ alias yim="yadm commit -m"
 alias gini="git init"
 alias yini="yadm init"
 alias gpush="git push origin main"
-alias gpush="yadm push origin main"
+alias ypush="yadm push origin main"
 
 
 
