@@ -25,7 +25,7 @@ static const char *colors[][3]      = {
 	[SchemeStatus]  = { "#fbf1c7", "#1d2021",  "#000000"  }, // Statusbar right {text,background,not used but cannot be empty}
 	[SchemeTagsSel]  = { "#1d2021", "#aa6d41",  "#000000"  }, // Tagbar left selected {text,background,not used but cannot be empty}
     [SchemeTagsNorm]  = { "#fbf1c7", "#1d2021",  "#000000"  }, // Tagbar left unselected {text,background,not used but cannot be empty}
-    [SchemeInfoSel]  = { "#1d2021", "#1d2021",  "#000000"  }, // infobar middle  selected {text,background,not used but cannot be empty}
+    [SchemeInfoSel]  = { "#1d2021", "#aa6d41",  "#000000"  }, // infobar middle  selected {text,background,not used but cannot be empty}
     [SchemeInfoNorm]  = { col_gray3, "#1d2021",  "#000000"  }, // infobar middle  unselected {text,background,not used but cannot be empty}
 };
 
@@ -84,7 +84,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", "#1d2021", "-nf", "#fbf1c7", "-sb", "#aa6d41", "-sf", "#fbf1c7", NULL };
 static const char *termcmd[]  = { "kitty", NULL };
 
 #include "movestack.c"
